@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Grafische projecten - Mandy Portfolio</title>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <nav x-data="{ mobileMenuOpen: false }" class="border-b border-gray-100 relative bg-white">
+        <div class="flex justify-between items-center px-12 py-6">
+            <div class="text-2xl font-bold">
+                <a href="../index.html" class="border-2 border-black px-2 py-1">M</a>
+            </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="text-sm font-medium hover:text-purple-500 transition-colors">Over mij</a>
+                <a href="graphic.html" class="text-sm font-medium hover:text-purple-500 transition-colors">Grafische
+                    projecten</a>
+                <a href="game.html" class="text-sm font-medium hover:text-purple-500 transition-colors">Game
+                    projecten</a>
+                <a href="contact.html" class="text-sm font-medium hover:text-purple-500 transition-colors">Contact</a>
+            </div>
+
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 text-gray-600 focus:outline-none">
+                <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+                <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <div x-show="mobileMenuOpen" x-transition @click.away="mobileMenuOpen = false"
+            class="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 z-50 shadow-md"
+            style="display: none;">
+            <div class="flex flex-col space-y-4 px-12 py-6">
+                <a href="../index.html" class="text-sm font-medium hover:text-purple-500">Over mij</a>
+                <a href="graphic.html" class="text-sm font-medium hover:text-purple-500">Grafische projecten</a>
+                <a href="game.html" class="text-sm font-medium hover:text-purple-500">Game projecten</a>
+                <a href="contact.html" class="text-sm font-medium hover:text-purple-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto mt-12 px-6">
+        <header class="mb-12">
+            <h1 class="text-3xl font-bold italic uppercase tracking-tight">Grafische projecten</h1>
+            <p class="text-gray-500 mt-2 italic">Een verzameling van mijn visuele ontwerpen, branding en illustraties.
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <a href="projects/grafisch/magazine.html" class="group block">
+                <div
+                    class="aspect-square border border-purple-100 rounded-xl overflow-hidden relative transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+
+                    <img src="../assets/cover-images/mixtape.png" alt="Magazine Design"
+                        class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-90">
+
+                    <div class="absolute inset-0 bg-purple-600/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+
+                <h3 class="mt-4 font-bold text-lg group-hover:text-purple-600 transition-colors">
+                    Muziek Magazine
+                </h3>
+                <p class="text-sm text-gray-400 uppercase tracking-wider">
+                    Layout • Typography
+                </p>
+            </a>
+
+            <a href="projects/grafisch/sharicklogo.html" class="group block">
+                <div
+                    class="aspect-square border border-green-100 rounded-xl overflow-hidden relative transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+
+                    <img src="../assets/cover-images/sharicklogo.png" alt="Sharick Logo"
+                        class="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-90">
+
+                    <div class="absolute inset-0 bg-green-600/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+
+                <h3 class="mt-4 font-bold text-lg group-hover:text-green-600 transition-colors">
+                    Sharick Logo
+                </h3>
+                <p class="text-sm text-gray-400 uppercase tracking-wider">
+                    Branding • Vector Art
+                </p>
+            </a>
+
+            <a href="projects/grafisch/3Dproducten.html" class="group block">
+                <div
+                    class="aspect-square border border-blue-100 rounded-xl overflow-hidden relative transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+
+                    <img src="../assets/cover-images/celestial.png" alt="3D Producten"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+
+                <h3 class="mt-4 font-bold text-lg group-hover:text-blue-600 transition-colors">
+                    Packaging Design
+                </h3>
+                <p class="text-sm text-gray-400 uppercase tracking-wider">
+                    Modeling • Rendering
+                </p>
+            </a>
+
+            <a href="projects/grafisch/totebag.html" class="group block">
+                <div
+                    class="aspect-square border border-blue-100 rounded-xl overflow-hidden relative transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2">
+
+                    <img src="../assets/cover-images/totebag.png" alt="Totebag Design"
+                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+
+                    <div class="absolute inset-0 bg-blue-600/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+
+                <h3 class="mt-4 font-bold text-lg group-hover:text-blue-600 transition-colors">
+                    Totebag Design
+                </h3>
+                <p class="text-sm text-gray-400 uppercase tracking-wider">
+                    Ontwerpen • Drukken
+                </p>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="mt-20 border-t border-gray-100 py-12 px-12">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-gray-400">&copy; 2026 Mandy Meesters.</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

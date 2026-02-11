@@ -60,19 +60,17 @@
                 </svg>
                 Terug naar overzicht
             </a>
-            <h1 class="text-4xl font-bold italic">Magazine</h1>
-            <p class="text-gray-500 mt-2 max-w-2xl">Voor dit project kreeg ik de opdracht om een logo en cover te ontwerpen voor een muziekmagazine aan de hand van Bubo's huistijl.
-                In de magazine zouden veel verschillende soorten muziekstijlen in terug komen dus ik had besloten om op de cover de "Emo" sectie te highlighten.
-                Het logo heb ik analoog gemaakt door de benodigde letter uit magazine te scheuren om het een beetje een ruwe kanten te geven, door deze techniek kan je voor toekomstige examplaren verschillende soorten logo's maken 
-                maar het zal alsnog makkelijk herkend kunnen worden dat het mixtape is. De coverfoto heb ik zelf gemaakt en bewerkt zodat de persoon op een stadium lijkt te staan, met het blauwe licht wou ik ook een kleine notch geven naar 1 van de bubo huiskleuren.
-
+            <h1 class="text-4xl font-bold italic">Totebag Design</h1>
+            <p class="text-gray-500 mt-2 max-w-2xl">Project Totebag: voor een opdracht mochten we iets bedrukken en ik besloot het voor iemand te maken. Ik heb daarom 
+                besloten om iets te maken van zijn favoriete band: Pierce The Veil. Ik heb ervoor gekozen om de gitaar iets schuin te zetten aangezien hierdoor de 
+                compositie iets intressanter werd. Het uiteindelijke ontwerp zou gedrukt op een zwarte tas, hierdoor heb ik besloten om het ontwerp in het wit te laten drukken voor een sterk contrast.
             </p>
         </header>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <template
-                x-for="image in ['../../../assets/grafisch/magazine/coverdrukklaar.png', '../../../assets/grafisch/magazine/foto.jpg', '../../../assets/grafisch/magazine/mixtapelogo.png']">
+                x-for="image in ['../../../assets/grafisch/totebag-design/totebagdesign.png', '../../../assets/grafisch/totebag-design/fotototebag.jpg']">
                 <div class="aspect-video bg-gray-100 border border-gray-200 rounded-lg overflow-hidden cursor-pointer group"
                     @click="imgSrc = image; open = true">
                     <img :src="image"
@@ -103,7 +101,7 @@
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="text-sm text-gray-400">
                 &copy; 2026 Mandy Meesters. 
-            </div>  
+            </div>
         </div>
     </footer>
 

@@ -69,7 +69,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <template
-                x-for="image in ['/assets/game/Hackaton/1spookje.png', '/assets/game/Hackaton/kat.png', '/assets/game/Hackaton/patroonfvleor.png', '/assets/game/Hackaton/spookspritesheet.png']">
+                x-for="image in ['../../../assets/game/Hackaton/1spookje.png', '../../../assets/game/Hackaton/kat.png', '../../../assets/game/Hackaton/patroonfvleor.png', '../../../assets/game/Hackaton/spookspritesheet.png']">
                 <div class="aspect-video bg-gray-100 border border-gray-200 rounded-lg overflow-hidden cursor-pointer group"
                     @click="imgSrc = image; open = true">
                     <img :src="image"

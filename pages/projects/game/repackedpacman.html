@@ -69,7 +69,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <template
-                x-for="image in ['/assets/game/repacked pacman/Game logo.png', '/assets/game/repacked pacman/mandy_meesters_gif.gif', '/assets/game/repacked pacman/mandy_meesters_tileset.png', '/assets/game/repacked pacman/octopuspacman.png', '/assets/game/repacked pacman/Pacman.png', '/assets/game/repacked pacman/Seemless pattern.png']">
+                x-for="image in ['../../../assets/game/repacked pacman/Game logo.png', '../../../assets/game/repacked pacman/mandy_meesters_gif.gif', '../../../assets/game/repacked pacman/mandy_meesters_tileset.png', '../../../assets/game/repacked pacman/octopuspacman.png', '../../../assets/game/repacked pacman/Pacman.png', '../../../assets/game/repacked pacman/Seemless pattern.png']">
                 <div class="aspect-video bg-gray-100 border border-gray-200 rounded-lg overflow-hidden cursor-pointer group"
                     @click="imgSrc = image; open = true">
                     <img :src="image"
